@@ -117,7 +117,7 @@ void gohere(){
 		cout<<endl<<endl;
 		SPACE(12);
 		COLOR(111);
-		for(int i=1;i<=9;i++) cout<<"  "<<i<<"  ";
+		for(char i='A';i<'A'+9;i++) cout<<"  "<<i<<"  ";
 		cout<<endl;
 		COLOR(7);
 		SPACE(8);
@@ -180,7 +180,7 @@ void gohere(){
 		cout<<endl<<endl;
 		
 		char cn,rn,vn;
-		centerstring("Enter Column Number: ");
+		centerstring("Enter Column Letter: ");
 		cin>>cn;
 		if(cn=='/'){
 			centerstring("Give Up? (y/n): ");
@@ -200,7 +200,8 @@ void gohere(){
 		cin>>rn;
 		centerstring("Enter Value: ");
 		cin>>vn;
-		cn-='0';
+		cn-='A';
+		cn++;
 		rn-='0';
 		vn-='0';
 		if(cn<1||cn>9||rn<1||rn>9||vn<0||vn>9||ans[cn-1][rn-1]!=0){
