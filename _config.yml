@@ -1,3 +1,4 @@
 theme: jekyll-theme-cayman
 title: Sudoku
 description: Neverending fun with the classic puzzle game.
+show_downloads: true
